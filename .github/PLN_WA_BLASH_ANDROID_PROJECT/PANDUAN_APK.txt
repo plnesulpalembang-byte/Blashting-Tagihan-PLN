@@ -1,0 +1,29 @@
+PLN ELECTRICITY SERVICES — WA BLASH ANDROID
+
+Web App asli:
+https://script.google.com/macros/s/AKfycbybh1IEv2ERNW_j7f9PS0pCyhDYNdGatfSumuL_7IC3nenwXHYqkbpwQ2xGy3DcgL0_/exec
+
+ISI PAKET
+- Proyek Android asli berbasis WebView
+- Tombol muat ulang, indikator loading, halaman error, dukungan link eksternal
+- GitHub Actions untuk membangun file APK
+
+CARA MEMBUAT APK TANPA INSTAL ANDROID STUDIO
+1. Login github.com, buat repository pribadi (Private).
+2. Ekstrak ZIP ini di komputer.
+3. Unggah seluruh ISI folder proyek ke root repository (termasuk .github).
+4. Buka tab Actions > Build APK Android > Run workflow.
+5. Setelah workflow selesai, buka hasil workflow dan unduh artifact PLN-WA-BLASH-APK.
+6. Ekstrak artifact, lalu kirim app-debug.apk ke HP Android Anda.
+7. Pasang APK melalui Files. Izinkan instal aplikasi dari sumber ini bila Android meminta.
+
+CATATAN
+- Ini adalah paket KODE PROYEK, bukan APK jadi. APK baru tersedia setelah build berhasil.
+- APK versi debug cocok untuk uji internal, bukan distribusi publik/Play Store.
+- APK memuat Web App langsung: operasi pengiriman, data, dan login tetap ditentukan backend Apps Script.
+- Jika Apps Script memerlukan autentikasi Google, login di Android WebView dapat dibatasi Google.
+  Solusi terbaik adalah menambahkan sistem akses aplikasi yang aman pada Web App atau memakai Chrome Custom Tabs.
+- Jangan bagikan akses repository publik jika kode berisi rahasia; proyek ini hanya berisi URL publik, tanpa token Fonnte.
+- Google Apps Script dan Google Drive mempunyai kuota: APK tidak menghapus batas kuota server.
+- Pembaruan UI web otomatis terlihat di APK selama URL deployment masih sama.
+- Jangan unggah token Fonnte, password, data pelanggan, atau kunci layanan ke repository.
